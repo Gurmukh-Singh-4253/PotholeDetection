@@ -2,6 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 model = YOLO("best.pt")
+# Replace path/to/file by actual path or 0 to use webcam footage
 cap = cv2.VideoCapture(0)
 
 while cap.isOpened():
